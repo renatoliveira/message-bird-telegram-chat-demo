@@ -1,0 +1,22 @@
+<template>
+  <lightning-layout horizontal-align="spread">
+    <lightning-layout-item flexibility="grow">
+      <lightning-input
+        name="chatInput"
+        label="Your message"
+        placeholder="type it here..."
+        value={message}
+        onchange={handleInputChange}
+      ></lightning-input>
+    </lightning-layout-item>
+    <lightning-layout-item>
+      <div class="slds-var-m-top_large slds-var-m-left_xx-small">
+        <lightning-button
+          disabled={isButtonDisabled}
+          label="Send"
+          onclick={handleClick}
+        ></lightning-button>
+      </div>
+    </lightning-layout-item>
+  </lightning-layout>
+</template>

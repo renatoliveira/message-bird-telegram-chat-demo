@@ -1,0 +1,16 @@
+<template>
+  <lightning-card title="Conversations" icon-name="standard:contact">
+    <div class="slds-box slds-var-m-around_medium">
+      <lightning-tabset>
+        <template if:true={channels} for:each={channels} for:item="channel">
+          <lightning-tab key={channel.Id} label={channel.Name}>
+            <c-chat-channel
+              record-id={recordId}
+              channel-id={channel.Id}
+            ></c-chat-channel>
+          </lightning-tab>
+        </template>
+      </lightning-tabset>
+    </div>
+  </lightning-card>
+</template>

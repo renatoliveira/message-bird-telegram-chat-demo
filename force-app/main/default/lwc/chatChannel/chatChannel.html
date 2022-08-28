@@ -1,0 +1,12 @@
+<template>
+  <template
+    if:true={conversations}
+    for:each={conversations}
+    for:item="conversation"
+  >
+    <c-conversation
+      key={conversation.ConversationId__c}
+      conversation-id={conversation.ConversationId__c}
+    ></c-conversation>
+  </template>
+</template>

@@ -1,0 +1,23 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true,
+      "package": "Message Bird",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT"
+    }
+  ],
+  "name": "message-bird-for-salesforce",
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "55.0",
+  "packageAliases": {
+    "Message Bird": "0Ho5G000000XZPRSA4",
+    "Message Bird@0.1.0-1": "04t5G000004PwAIQA0",
+    "Message Bird@0.1.0-2": "04t5G000004PwANQA0",
+    "Message Bird@0.1.0-3": "04t5G000004PwASQA0",
+    "Message Bird@0.1.0-4": "04t5G000004PwAXQA0",
+    "Message Bird@0.1.0-5": "04t5G000004PwAcQAK"
+  }
+}

@@ -1,0 +1,9 @@
+<template>
+  <section role="log" class="slds-chat">
+    <ul class="slds-chat-list">
+      <template for:each={_messages} for:item="message" if:true={_messages}>
+        <c-message key={message.id} message={message}></c-message>
+      </template>
+    </ul>
+  </section>
+</template>

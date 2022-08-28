@@ -19,13 +19,7 @@ Below is a short list of the steps necessary to see the application working. Mor
 5. Create a "start conversation" screen flow from the template provided by the app, and add it to the contact screen page.
 6. Navigate to a contact record page and click "start conversation", then refresh the page and see the component working.
 
-### 1. Install the package
-
-![installation](images/1.png)
-
-Open the link and click "Install" (screenshot shows "upgrade", but you should see "install" if the package is not installed in your environment). Keep "install for admins only" because it is for demonstration purposes only, and it doesn't make a difference because access is granted through permission sets anyway.
-
-### 2. Set up the named credential
+### 1. Set up the named credential
 
 On setup, search for "named credentials" on the search menu on the left. Click "New" to create a new entry. The named credential should have **exactly** the values below in the specified fields:
 
@@ -41,17 +35,17 @@ Note: the Test API key does not work.
 
 ![named credential](images/2.png)
 
-### 3. Assign the permission set
+### 2. Assign the permission set
 
 When the app is installed in the environment, you'll see a "Message Bird" permission set. This permission set grants access to the necessary classes, app, objects and fields to use. Assign it to your users by searching for "Permission Sets" on setup, and then on "Manage Assignments" on the permission set page.
 
-### 4. Create a channel
+### 3. Create a channel
 
 Now that you have assigned the permission set to your user, click on the application menu on the top left corner of your Lightning Experience screen, and select "Message Bird manager" to go to the app you just installed. The first tab you'll see will be the "Channels" tab, which contains the available channels your org can connect to.
 
 Create a new record by clicking "New" and give it a meaningful name (such as the name of the application you are connecting with, such as "Telegram"). The "Identifier" field is the channel identifier found in your Message Bird account. If you have not yet crated a Telegram channel, do so and come back to this guide. Once you have created the Telegram channel on Message Bird, copy its channel identifier and paste onto this record. Set its "Active" checkbox to checked and save.
 
-### 5. Create a start conversation flow
+### 4. Create a start conversation flow
 
 The package comes with a "start conversation" template flow for you. On Setup go to your "Flows" menu under "Process Automation", and from there click on "New Flow". On the Flow Builder interface, switch the tab from "Core" to "All + Templates":
 
@@ -69,7 +63,7 @@ In the example below the quick action is named as "Start Telegram Conversation":
 
 ![quick action on editor](images/5.png)
 
-### 6. Test the component
+### 5. Test the component
 
 Once you navigate to a contact's record page on the "Message Bird manager" app you'll see the component on the right, but it won't show anything because you don't have a conversation with the contact yet (probably, right?). Use the quick action to start a new conversation with the contact. To do this, and because of how bots work on Telegram, you'll need first to get the Telegram ID of that contact. If you are using your own Telegram account to test this app, I suggest using the [@userinfobot](https://t.me/userinfobot) to get to know the ID of your user on Telegram.
 
